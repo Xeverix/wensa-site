@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mechascene.dawai",
+      "sha256_cert_fingerprints": [
+        "CD:7E:E8:D2:2D:46:20:ED:FE:04:27:7E:1F:24:4E:5C:47:2E:40:A2:91:40:92:24:7C:7C:A2:14:1C:0C:4D:97"
+      ]
+    }
+  }
+]
