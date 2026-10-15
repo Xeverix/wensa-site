@@ -15,12 +15,24 @@ firebase.messaging();
 
 self.addEventListener('notificationclick', (event) => {
   event.notification.close();
+  const n = event.notification.data || {};
+  const d = (n.FCM_MSG && n.FCM_MSG.data) || n.data || {};
+  const type = d.type ? String(d.type) : '';
+  const id = d.id ? String(d.id) : '';
+  const url = type
+    ? '/app/#/n/' + encodeURIComponent(type) + (id ? '/' + encodeURIComponent(id) : '')
+    : '/app/';
   event.waitUntil(
-    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((list) => {
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(async (list) => {
       for (const c of list) {
-        if (c.url.includes('/app/') && 'focus' in c) return c.focus();
+        if (c.url.includes('/app/') && 'focus' in c) {
+          try {
+            await c.focus();
+            if ('navigate' in c) { await c.navigate(url); return; }
+          } catch (e) { /* يُفتح في نافذة جديدة */ }
+        }
       }
-      return self.clients.openWindow('/app/');
+      return self.clients.openWindow(url);
     })
   );
 });
