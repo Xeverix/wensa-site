@@ -3,6 +3,17 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
+      "package_name": "com.mechascene.lagi",
+      "sha256_cert_fingerprints": [
+        "38:80:81:6C:78:4E:36:E1:93:69:C6:20:8D:1F:2E:FA:B5:DA:1B:43:80:AE:BC:EE:6C:5D:0D:31:17:90:AE:B9",
+        "CD:7E:E8:D2:2D:46:20:ED:FE:04:27:7E:1F:24:4E:5C:47:2E:40:A2:91:40:92:24:7C:7C:A2:14:1C:0C:4D:97"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
       "package_name": "com.mechascene.dawai",
       "sha256_cert_fingerprints": [
         "CD:7E:E8:D2:2D:46:20:ED:FE:04:27:7E:1F:24:4E:5C:47:2E:40:A2:91:40:92:24:7C:7C:A2:14:1C:0C:4D:97"
