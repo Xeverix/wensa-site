@@ -1,112 +1,164 @@
 <!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>لاقي: اسأل عن الدوا قبل ما تلف على الصيدليات</title><meta property="og:type" content="website"><meta property="og:site_name" content="لاقي"><meta property="og:locale" content="ar_AR"><meta property="og:url" content="https://lagi.mechascene.com/"><meta property="og:title" content="لاقي: اسأل عن الدوا قبل ما تلف على الصيدليات"><meta property="og:description" content="خدمة اجتماعية مجانية لمصلحة المواطن. صيادلة موثّقون يردّون على سؤالك عن توفر الدوا. حمّل التطبيق أو افتحه على الويب."><meta property="og:image" content="https://lagi.mechascene.com/og4.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://lagi.mechascene.com/og4.png"><meta name="description" content="اسأل عن الدواء، يجيبك صيدلي قريب منك"><link rel="icon" href="/logo.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet"><style>
-:root{--ink:#0d0d12;--mut:#5f6b66;--line:#e4ece7;--deep:#0B3D2E;--main:#0F6B4A;--mint:#D7F0E3;--cream:#FBF7EC;--amber:#E0A02B;--ease:cubic-bezier(.22,.8,.24,1)}
+:root{--ink:#0d1a15;--mut:#5b6b64;--line:#e3ebe6;--deep:#0B3D2E;--deeper:#072a20;--main:#0F6B4A;--mint:#D7F0E3;--cream:#FBF7EC;--amber:#E0A02B;--ease:cubic-bezier(.22,.8,.24,1)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--ink);font:17px/1.8 Tajawal,system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif}
-a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-/* nav */
-.top{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body{margin:0;background:#fff;color:var(--ink);font:17px/1.8 Tajawal,system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif;overflow-x:hidden}
+a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.top{position:sticky;top:0;z-index:20;background:rgba(7,42,32,.92);backdrop-filter:blur(10px);color:#fff}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;text-decoration:none}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;text-decoration:none}
 .brand img{width:34px;height:34px;border-radius:10px}
-.links{display:flex;gap:22px;font-size:15px;font-weight:500;color:var(--mut)}
-.links a{text-decoration:none}.links a:hover{color:var(--main)}
-.pill{display:inline-flex;align-items:center;gap:10px;border-radius:999px;text-decoration:none;font-weight:700;padding:11px 24px;transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
-.pill:hover{transform:translateY(-2px)}
-.pill.sm{padding:8px 18px;font-size:15px;background:var(--deep);color:#fff}
-/* hero */
-.hero{background:linear-gradient(180deg,var(--cream),#fff);overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding-top:56px;padding-bottom:56px}
-.kicker{color:var(--main);font-weight:700;font-size:15px;margin:0 0 10px}
-h1{font-size:clamp(34px,5.4vw,58px);line-height:1.25;font-weight:800;margin:0 0 16px;color:var(--deep);text-wrap:balance}
-.lead{font-size:19px;color:var(--mut);margin:0 0 26px;max-width:520px}
+.links{display:flex;gap:24px;font-size:15px;font-weight:500;color:#bfe3d2}.links a{text-decoration:none}.links a:hover{color:#fff}
+.pill{display:inline-flex;align-items:center;gap:10px;border-radius:999px;text-decoration:none;font-weight:700;padding:11px 24px;transition:transform .2s var(--ease)}.pill:hover{transform:translateY(-2px)}
+.pill.sm{padding:8px 18px;font-size:15px;background:var(--amber);color:#2b1c00}
+.pill.play{background:#fff;color:var(--deep);padding:11px 26px 11px 22px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.pill.play svg{width:28px;height:28px;flex:none}.pill.play small{display:block;font-size:11px;font-weight:500;opacity:.7;line-height:1.2}.pill.play b{display:block;font-size:18px;line-height:1.2}
+.pill.ghost{border:1.5px solid rgba(255,255,255,.35);color:#fff}.pill.ghost:hover{border-color:#fff}
+.hero{position:relative;background:radial-gradient(900px 500px at 85% 20%,#12664a 0%,transparent 60%),var(--deep);color:#fff;overflow:hidden}
+.hero .rings{position:absolute;inset:0;opacity:.5;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;padding-top:64px;padding-bottom:72px}
+.kicker{color:#f0c36a;font-weight:700;font-size:15px;margin:0 0 12px}
+h1{font-size:clamp(36px,5.6vw,64px);line-height:1.22;font-weight:800;margin:0 0 18px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--amber)}
+.lead{font-size:19px;color:#cfe9dd;margin:0 0 28px;max-width:520px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
-.pill.play{background:var(--deep);color:#fff;padding:12px 26px 12px 22px}
-.pill.play svg{width:26px;height:26px;flex:none}
-.pill.play small{display:block;font-size:11px;font-weight:500;opacity:.8;line-height:1.2}
-.pill.play b{display:block;font-size:18px;line-height:1.2}
-.pill.ghost{border:1.5px solid var(--line);background:#fff;color:var(--deep)}
-.pill.ghost:hover{border-color:var(--main)}
-.sub{margin-top:14px;font-size:14px;color:var(--mut)}.sub a{color:var(--main);font-weight:700}
-.phone{justify-self:center;width:min(300px,78vw);border-radius:38px;background:#14201b;padding:9px;box-shadow:0 30px 60px rgba(11,61,46,.25);transform:rotate(-3deg)}
-.phone img{display:block;width:100%;height:auto;border-radius:30px}
+.sub{margin-top:16px;font-size:14px;color:#a9d3c0}.sub a{color:#fff;font-weight:700}
+.float{position:absolute;pointer-events:none;animation:bob 7s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-14px) rotate(8deg)}}
+/* demo phone */
+.stage{position:relative;justify-self:center;width:min(310px,82vw)}
+.ph{border-radius:40px;background:#0a1511;padding:9px;box-shadow:0 40px 80px rgba(0,0,0,.45),0 0 0 2px #1d3a2f}
+.scr{border-radius:32px;background:var(--cream);color:var(--ink);height:500px;overflow:hidden;position:relative;font-size:14px;line-height:1.5}
+.bar{background:linear-gradient(160deg,#0B3D2E,#14765a);color:#fff;padding:18px 16px 16px;border-radius:0 0 26px 26px}
+.bar b{font-size:20px}
+.field{margin-top:12px;background:#fff;color:var(--ink);border-radius:999px;padding:10px 16px;display:flex;align-items:center;gap:8px;min-height:42px}
+.field svg{width:16px;height:16px;flex:none}
+.caret{display:inline-block;width:2px;height:16px;background:var(--main);margin-inline-start:2px;animation:bl 1s steps(1) infinite;vertical-align:middle}
+@keyframes bl{50%{opacity:0}}
+.q,.r,.dir{opacity:0;transform:translateY(14px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.q.on,.r.on,.dir.on{opacity:1;transform:none}
+.q{margin:14px 14px 0;background:#fff;border-radius:18px;padding:12px 14px;border:1px solid var(--line)}
+.q h4{margin:0;font-size:16px}.q span{color:var(--mut);font-size:12px}
+.tag{display:inline-block;background:#fff4d6;color:#8a5a00;font-size:11px;font-weight:700;border-radius:99px;padding:1px 10px;margin-top:6px}
+.tag.ok{background:var(--mint);color:#0b5a3b}
+.r{margin:10px 14px 0;background:#fff;border-radius:18px;padding:11px 13px;border:1px solid var(--line);display:flex;gap:10px;align-items:center}
+.av{width:36px;height:36px;border-radius:50%;background:#b13a2e;color:#fff;display:grid;place-items:center;font-weight:800;flex:none}
+.r .t{flex:1;min-width:0}.r b{display:flex;align-items:center;gap:5px;font-size:14px}.r span{font-size:12px;color:var(--mut)}
+.r .st{font-size:12px;font-weight:700;border-radius:99px;padding:2px 10px;background:var(--mint);color:#0b5a3b;white-space:nowrap}
+.r .st.no{background:#fde7e4;color:#9b2c20}
+.dir{margin:14px 14px 0;background:var(--amber);color:#2b1c00;font-weight:800;border-radius:999px;text-align:center;padding:11px;display:flex;justify-content:center;gap:8px;align-items:center}
+.pin{position:absolute;inset-inline-start:-18px;bottom:-14px;background:#fff;border-radius:16px;padding:10px 14px;box-shadow:0 18px 40px rgba(0,0,0,.3);color:var(--ink);font-weight:700;font-size:14px;display:flex;gap:8px;align-items:center;opacity:0;transform:scale(.8);transition:.5s var(--ease)}
+.pin.on{opacity:1;transform:none}
 /* sections */
-section{padding:64px 0}
-h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;line-height:1.3;margin:0 0 10px;color:var(--deep);text-wrap:balance}
-.sec-lead{color:var(--mut);margin:0 0 36px;max-width:620px}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.step{border:1px solid var(--line);border-radius:24px;padding:20px 20px 0;background:#fff;overflow:hidden;display:flex;flex-direction:column}
-.step h3{margin:0 0 6px;font-size:20px;color:var(--main)}.step p{margin:0 0 16px;color:var(--mut);font-size:16px}
-.step img{width:68%;height:auto;align-self:center;margin-top:auto;border-radius:20px 20px 0 0;border:6px solid #14201b;border-bottom:0;display:block}
-.band{background:var(--deep);color:#fff}
+section{padding:72px 0}
+h2{font-size:clamp(27px,3.8vw,40px);font-weight:800;line-height:1.3;margin:0 0 10px;color:var(--deep);text-wrap:balance}
+.sec-lead{color:var(--mut);margin:0 0 38px;max-width:620px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{border-radius:28px;padding:22px;background:var(--cream);position:relative;overflow:hidden}
+.step:nth-child(2){background:var(--mint)}.step:nth-child(3){background:#fff4d6}
+.step svg{width:100%;height:auto;display:block;margin-bottom:12px}
+.step h3{margin:0 0 4px;font-size:22px;color:var(--deep)}.step p{margin:0;color:#41524b;font-size:16px}
+.step .n{position:absolute;top:14px;inset-inline-end:18px;font-size:54px;font-weight:800;color:rgba(11,61,46,.08);line-height:1}
+.band{background:var(--deep);color:#fff;position:relative;overflow:hidden}
 .band h2{color:#fff}.band .sec-lead{color:#bfe3d2}
-.two{display:grid;grid-template-columns:1fr .8fr;gap:40px;align-items:center}
-.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border-radius:999px;padding:6px 16px;font-weight:700;margin-bottom:14px;font-size:15px}
-.badge i{width:9px;height:9px;border-radius:50%;background:var(--amber);display:block}
-.band .phone{background:#000;transform:rotate(3deg)}
+.two{display:grid;grid-template-columns:1fr .85fr;gap:40px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border-radius:999px;padding:6px 16px;font-weight:700;margin-bottom:14px;font-size:15px}.badge i{width:9px;height:9px;border-radius:50%;background:var(--amber)}
+.rule{display:flex;gap:12px;align-items:flex-start;margin-top:14px;color:#d6efe3}.rule svg{flex:none;width:26px;height:26px;margin-top:3px}
 .faq{max-width:760px}
 details{border-bottom:1px solid var(--line);padding:16px 0}
-summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:12px}
-summary::-webkit-details-marker{display:none}
-summary::after{content:'+';color:var(--main);font-size:24px;line-height:1}
-details[open] summary::after{content:'–'}
-details p{margin:10px 0 0;color:var(--mut)}
+summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:12px}summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--main);font-size:24px;line-height:1}details[open] summary::after{content:'–'}
+details p{margin:10px 0 0;color:var(--mut)}details a{color:var(--main);font-weight:700}
 .note{background:var(--mint);border-radius:20px;padding:18px 22px;color:var(--deep);font-weight:500}
-.get{display:grid;grid-template-columns:1fr;gap:0;text-align:center}
-.get .cta{justify-content:center}
+.final{background:linear-gradient(135deg,var(--deep),#12664a);color:#fff;border-radius:36px;padding:54px 24px;text-align:center;position:relative;overflow:hidden}
+.final h2{color:#fff}.final .sec-lead{margin-inline:auto;color:#cfe9dd}.final .cta{justify-content:center}
 footer{border-top:1px solid var(--line);padding:30px 0 40px;font-size:14px;color:var(--mut)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center}
 footer nav{display:flex;flex-wrap:wrap;gap:8px 20px}footer a{text-decoration:none}footer a:hover{color:var(--main)}
-@media(max-width:820px){
- .links{display:none}
- .hero .wrap,.two{grid-template-columns:1fr}
- .hero .wrap{padding-top:36px;padding-bottom:40px}
- .steps{grid-template-columns:1fr}
- .phone{order:-1;transform:none;width:min(240px,64vw)}
- section{padding:46px 0}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill{transition:none}}
+@media(max-width:820px){.links{display:none}.hero .wrap,.two{grid-template-columns:1fr}.hero .wrap{padding-top:36px;padding-bottom:48px}.steps{grid-template-columns:1fr}section{padding:48px 0}.scr{height:470px}.pin{inset-inline-start:6px}.float.f1{display:none}.two>svg{max-width:320px;justify-self:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.float,.caret{animation:none}.q,.r,.dir,.pin{transition:none}}
 </style></head><body>
 <header class="top"><div class="wrap"><a class="brand" href="/"><img src="/logo.png" alt="" width="34" height="34">لاقي</a><nav class="links"><a href="#how">كيف يعمل</a><a href="#pharmacist">الصيدلي الموثّق</a><a href="#faq">أسئلة شائعة</a><a href="get.html">طريقة التثبيت</a></nav><a class="pill sm" href="https://play.google.com/store/apps/details?id=com.mechascene.lagi">حمّل التطبيق</a></div></header>
 
-<div class="hero"><div class="wrap"><div>
+<div class="hero">
+<svg class="rings" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="none" stroke-width="2"><circle cx="980" cy="120" r="150" stroke="#2f8a69"/><circle cx="1070" cy="170" r="150" stroke="#E0A02B" opacity=".7"/><circle cx="120" cy="620" r="110" stroke="#2f8a69"/><circle cx="190" cy="660" r="110" stroke="#E0A02B" opacity=".6"/></g></svg>
+<svg class="float f1" style="top:90px;inset-inline-start:46%;width:54px;animation-delay:-2s" viewBox="0 0 60 30" aria-hidden="true"><g transform="rotate(-25 30 15)"><rect x="2" y="3" width="56" height="24" rx="12" fill="#fff"/><path d="M30 3h16a12 12 0 0 1 0 24H30z" fill="#E0A02B"/></g></svg>
+<svg class="float" style="bottom:60px;inset-inline-start:8%;width:40px;animation-delay:-4s" viewBox="0 0 60 30" aria-hidden="true"><g transform="rotate(35 30 15)"><rect x="2" y="3" width="56" height="24" rx="12" fill="#2f8a69"/><path d="M30 3h16a12 12 0 0 1 0 24H30z" fill="#fff"/></g></svg>
+<div class="wrap"><div>
 <p class="kicker">للاستعلام عن توفر الأدوية في السودان</p>
-<h1>اسأل عن الدواء، يجيبك صيدلي قريب منك</h1>
-<p class="lead">اكتب اسم الدواء، فيرد عليك صيادلة موثّقون بمتوفر أو غير متوفر، والسعر إن رغبوا. وفّر على نفسك لفّة الصيدليات.</p>
+<h1>اسأل عن الدواء، <em>يجيبك صيدلي</em> قريب منك</h1>
+<p class="lead">اكتب اسم الدواء، فيرد عليك صيادلة موثّقون بمتوفر أو غير متوفر. وفّر على نفسك لفّة الصيدليات.</p>
 <div class="cta">
 <a class="pill play" href="https://play.google.com/store/apps/details?id=com.mechascene.lagi"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#00A0FF" d="M48 24 288 256 48 488C38 482 32 472 32 458V54C32 40 38 30 48 24Z"/><path fill="#32D17A" d="M48 24 360 205 288 256Z"/><path fill="#F43249" d="M48 488 360 307 288 256Z"/><path fill="#FFC400" d="M360 205 452 240Q472 256 452 272L360 307 288 256Z"/></svg><span><small>متوفر على</small><b>Google Play</b></span></a>
-<a class="pill ghost" href="app/">افتح التطبيق على الويب</a>
-</div>
+<a class="pill ghost" href="app/">افتح التطبيق على الويب</a></div>
 <p class="sub">المرحلة الأولى: ولايتا <b>الخرطوم</b> و<b>الجزيرة</b> · <a href="https://dl.mechascene.com/dawai.apk" download>ملف APK</a> · <a href="https://t.me/lagi_app">تيليجرام</a></p>
-</div><div class="phone"><img src="/shots/question.jpg" alt="سؤال عن دواء ورد صيدلية عليه في تطبيق لاقي" width="560" height="1056"></div></div></div>
+</div>
+<div class="stage" aria-label="عرض توضيحي لسؤال عن دواء وردّ الصيدليات"><div class="ph"><div class="scr">
+<div class="bar"><b>لاقي</b><div class="field"><svg viewBox="0 0 24 24" fill="none" stroke="#0F6B4A" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span id="typed">اسأل عن دواء…</span><i class="caret"></i></div></div>
+<div class="q" id="q"><h4>أموكلان ٦٢٥ (حبوب)</h4><span>بحري، الخرطوم</span><br><span class="tag" id="qt">بانتظار الرد</span></div>
+<div class="r" id="r1"><div class="av">ص</div><div class="t"><b>صيدلية الروى <svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#2f6fdd"/><path d="m7 12.5 3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></b><span>الدروشاب، بحري</span></div><div class="st">متوفر</div></div>
+<div class="r" id="r2"><div class="av" style="background:#0F6B4A">د</div><div class="t"><b>صيدلية الدسوقي <svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#2f6fdd"/><path d="m7 12.5 3.3 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></b><span>صابرين، أم درمان</span></div><div class="st no">غير متوفر</div></div>
+<div class="dir" id="dir"><svg width="16" height="16" viewBox="0 0 24 24" fill="#2b1c00"><path d="M3 11 21 3l-8 18-2-8z"/></svg>الاتجاهات</div>
+</div></div>
+<div class="pin" id="pin"><svg width="22" height="22" viewBox="0 0 24 24" fill="#0F6B4A"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.500a2.500 2.500 0 0 1 0 5z"/></svg>على بعد دقائق منك</div></div>
+</div></div>
 
 <section id="how"><div class="wrap"><h2>ثلاث خطوات وتعرف أين الدواء</h2><p class="sec-lead">بلا اتصالات ولا تنقّل بين الصيدليات.</p>
 <div class="steps">
-<div class="step"><h3>١. اسأل</h3><p>اكتب اسم الدواء، أو أرفق صورة روشتة للاستفسار عن أدويتها دفعة واحدة.</p><img src="/shots/home.jpg" alt="الشاشة الرئيسية وخانة البحث" loading="lazy" width="560" height="1056"></div>
-<div class="step"><h3>٢. يرد الصيادلة</h3><p>يجيبك الصيادلة الموثّقون بمتوفر أو غير متوفر، والسعر إن رغبوا.</p><img src="/shots/question.jpg" alt="رد صيدلية على السؤال" loading="lazy" width="560" height="1056"></div>
-<div class="step"><h3>٣. اذهب للصيدلية</h3><p>صل إلى الصيدلية بالخريطة والاتجاهات.</p><img src="/shots/map.jpg" alt="خريطة الصيدليات" loading="lazy" width="560" height="1056"></div>
+<div class="step"><span class="n">١</span>
+<svg viewBox="0 0 220 150" aria-hidden="true"><rect x="14" y="26" width="192" height="52" rx="26" fill="#fff"/><circle cx="48" cy="52" r="12" fill="none" stroke="#0F6B4A" stroke-width="5"/><path d="m58 62 10 10" stroke="#0F6B4A" stroke-width="5" stroke-linecap="round"/><rect x="84" y="46" width="86" height="10" rx="5" fill="#cfe5d9"/><rect x="84" y="62" width="52" height="8" rx="4" fill="#e6f0ea"/><g transform="translate(150 98) rotate(-28)"><rect x="0" y="0" width="52" height="22" rx="11" fill="#fff"/><path d="M26 0h15a11 11 0 0 1 0 22H26z" fill="#E0A02B"/></g><g transform="translate(40 100) rotate(18)"><rect x="0" y="0" width="38" height="16" rx="8" fill="#0F6B4A"/><path d="M19 0h11a8 8 0 0 1 0 16H19z" fill="#fff" opacity=".9"/></g></svg>
+<h3>اسأل</h3><p>اكتب اسم الدواء، أو أرفق صورة روشتة للاستفسار عن أدويتها دفعة واحدة.</p></div>
+<div class="step"><span class="n">٢</span>
+<svg viewBox="0 0 220 150" aria-hidden="true"><rect x="18" y="14" width="130" height="50" rx="22" fill="#fff"/><rect x="36" y="32" width="70" height="8" rx="4" fill="#cfe5d9"/><rect x="36" y="46" width="44" height="7" rx="3.500" fill="#e6f0ea"/><rect x="72" y="76" width="130" height="56" rx="22" fill="#0F6B4A"/><circle cx="104" cy="104" r="14" fill="#fff"/><path d="M104 96v16M96 104h16" stroke="#0F6B4A" stroke-width="5" stroke-linecap="round"/><rect x="128" y="94" width="58" height="8" rx="4" fill="#9fd2bb"/><rect x="128" y="108" width="36" height="7" rx="3.500" fill="#9fd2bb" opacity=".7"/><circle cx="182" cy="82" r="14" fill="#E0A02B"/><path d="m175 82 5 5 9-10" fill="none" stroke="#fff" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<h3>يرد الصيادلة</h3><p>يجيبك الصيادلة الموثّقون بمتوفر أو غير متوفر، والسعر إن رغبوا.</p></div>
+<div class="step"><span class="n">٣</span>
+<svg viewBox="0 0 220 150" aria-hidden="true"><rect x="10" y="10" width="200" height="130" rx="22" fill="#fff"/><path d="M10 96c40-30 70 20 110-8s60-26 90-6v58H32a22 22 0 0 1-22-22z" fill="#cfe9f5"/><g stroke="#e3dccb" stroke-width="8" stroke-linecap="round" fill="none"><path d="M30 40h120M70 20v70M150 50l40 30"/></g><path d="M48 112c30-20 50 6 74-26s24-20 40-34" fill="none" stroke="#0F6B4A" stroke-width="4" stroke-dasharray="2 9" stroke-linecap="round"/><circle cx="48" cy="112" r="8" fill="#0F6B4A"/><g transform="translate(150 20)"><path d="M16 0a16 16 0 0 0-16 16c0 12 16 32 16 32s16-20 16-32A16 16 0 0 0 16 0z" fill="#E0A02B"/><circle cx="16" cy="16" r="7" fill="#fff"/></g></svg>
+<h3>اذهب للصيدلية</h3><p>صل إلى الصيدلية بالخريطة والاتجاهات.</p></div>
 </div></div></section>
 
-<section id="pharmacist" class="band"><div class="wrap two"><div>
+<section id="pharmacist" class="band">
+<svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.4;pointer-events:none" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="none" stroke-width="2"><circle cx="1050" cy="400" r="140" stroke="#2f8a69"/><circle cx="1130" cy="440" r="140" stroke="#E0A02B" opacity=".6"/></g></svg>
+<div class="wrap two" style="position:relative"><div>
 <span class="badge"><i></i>صيدلي موثّق</span>
 <h2>ردود من صيادلة تأكّدنا من ترخيصهم</h2>
-<p class="sec-lead" style="margin-bottom:14px">يرفع الصيدلي صورة ترخيص مزاولة المهنة ويراجعها فريق التطبيق، وبعد قبولها يحصل على شارة «صيدلي موثّق» ويستطيع الرد على الأسئلة.</p>
-<p class="sec-lead" style="margin:0">الصيادلة الموثّقون فقط يدخلون «مجلس الصيادلة»، وهو مساحة مهنية خاصة بهم، ويشمل الصيادلة المقيمين خارج السودان.</p>
-</div><div class="phone"><img src="/shots/council.jpg" alt="مجلس الصيادلة" loading="lazy" width="560" height="1056"></div></div></section>
+<div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="#E0A02B" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2.200"/><path d="M14 10h4M14 14h3M6.500 16c.6-1.400 2-2 2.500-2s1.900.6 2.500 2"/></svg><span>يرفع الصيدلي صورة ترخيص مزاولة المهنة ويراجعها فريق التطبيق.</span></div>
+<div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="#E0A02B" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.500 8 8 9 4.500-1 8-4 8-9V6z"/><path d="m8.500 12 2.600 2.600L16 9.500"/></svg><span>بعد القبول يحصل على شارة «صيدلي موثّق» ويستطيع الرد على الأسئلة.</span></div>
+<div class="rule"><svg viewBox="0 0 24 24" fill="none" stroke="#E0A02B" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg><span>الصيادلة الموثّقون فقط يدخلون «مجلس الصيادلة»، وهو مساحة مهنية خاصة بهم، ويشمل الصيادلة المقيمين خارج السودان.</span></div>
+</div>
+<svg viewBox="0 0 300 260" aria-hidden="true" style="width:100%;height:auto"><g transform="rotate(-6 150 130)"><rect x="30" y="40" width="230" height="150" rx="22" fill="#fff"/><rect x="30" y="40" width="230" height="40" rx="22" fill="#0F6B4A"/><rect x="30" y="62" width="230" height="18" fill="#0F6B4A"/><path d="M62 52v16M54 60h16" stroke="#fff" stroke-width="4" stroke-linecap="round"/><rect x="92" y="55" width="80" height="9" rx="4.500" fill="#9fd2bb"/><circle cx="76" cy="124" r="24" fill="#e6f0ea"/><circle cx="76" cy="118" r="9" fill="#0F6B4A"/><path d="M58 142c4-10 24-10 36 0" fill="#0F6B4A"/><rect x="118" y="106" width="110" height="10" rx="5" fill="#cfe5d9"/><rect x="118" y="124" width="76" height="9" rx="4.500" fill="#e6f0ea"/><rect x="118" y="142" width="92" height="9" rx="4.500" fill="#e6f0ea"/></g><g transform="translate(196 138)"><circle cx="40" cy="40" r="42" fill="#E0A02B"/><circle cx="40" cy="40" r="42" fill="none" stroke="#fff" stroke-width="5"/><path d="m22 41 12 12 24-26" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+</div></section>
 
 <section id="faq"><div class="wrap faq"><h2>أسئلة شائعة</h2><p class="sec-lead">إجابات قصيرة عن أكثر ما يُسأل.</p>
 <details><summary>ما هو لاقي؟</summary><p>تطبيق يربط المرضى وأسرهم بالصيادلة في السودان للاستعلام عن توفر الأدوية في مدينتك. خدمة اجتماعية مجانية لمصلحة المواطن.</p></details>
 <details><summary>هل يبيع لاقي الأدوية؟</summary><p>لا. لاقي للاستعلام عن التوفر فقط، ولا نبيع أدوية ولا نتوسط في بيعها.</p></details>
 <details><summary>هل أحصل على نصيحة طبية؟</summary><p>لا. لا نقدّم نصائح طبية. استشر الطبيب أو الصيدلي قبل تناول أي دواء.</p></details>
 <details><summary>أين يعمل التطبيق حالياً؟</summary><p>في المرحلة الأولى: ولايتا الخرطوم والجزيرة.</p></details>
-<details><summary>كيف أثبّت التطبيق؟</summary><p>من <a href="https://play.google.com/store/apps/details?id=com.mechascene.lagi" style="color:var(--main);font-weight:700">Google Play</a>، أو افتحه مباشرة على الويب. وللتثبيت من ملف APK راجع <a href="get.html" style="color:var(--main);font-weight:700">طريقة التثبيت</a>.</p></details>
-<details><summary>كيف أتواصل معكم؟</summary><p><a href="mailto:admin@mechascene.com" style="color:var(--main);font-weight:700">admin@mechascene.com</a></p></details>
+<details><summary>كيف أثبّت التطبيق؟</summary><p>من <a href="https://play.google.com/store/apps/details?id=com.mechascene.lagi">Google Play</a>، أو افتحه مباشرة على الويب. وللتثبيت من ملف APK راجع <a href="get.html">طريقة التثبيت</a>.</p></details>
+<details><summary>كيف أتواصل معكم؟</summary><p><a href="mailto:admin@mechascene.com">admin@mechascene.com</a></p></details>
 </div></section>
 
 <section style="padding-top:0"><div class="wrap"><div class="note">تنبيه مهم: لاقي للاستعلام عن التوفر فقط. لا نقدّم نصائح طبية ولا نبيع أدوية ولا نتوسط في بيعها. استشر الطبيب أو الصيدلي قبل تناول أي دواء.</div></div></section>
 
-<section class="get" style="padding-top:20px"><div class="wrap"><h2>جرّب لاقي الآن</h2><p class="sec-lead" style="margin-inline:auto">مجاني، ويعمل على الأندرويد وعلى الويب.</p>
-<div class="cta"><a class="pill play" href="https://play.google.com/store/apps/details?id=com.mechascene.lagi"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#00A0FF" d="M48 24 288 256 48 488C38 482 32 472 32 458V54C32 40 38 30 48 24Z"/><path fill="#32D17A" d="M48 24 360 205 288 256Z"/><path fill="#F43249" d="M48 488 360 307 288 256Z"/><path fill="#FFC400" d="M360 205 452 240Q472 256 452 272L360 307 288 256Z"/></svg><span><small>متوفر على</small><b>Google Play</b></span></a><a class="pill ghost" href="app/">افتح التطبيق على الويب</a></div></div></section>
+<section style="padding-top:10px"><div class="wrap"><div class="final"><h2>جرّب لاقي الآن</h2><p class="sec-lead">مجاني، ويعمل على الأندرويد وعلى الويب.</p>
+<div class="cta"><a class="pill play" href="https://play.google.com/store/apps/details?id=com.mechascene.lagi"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#00A0FF" d="M48 24 288 256 48 488C38 482 32 472 32 458V54C32 40 38 30 48 24Z"/><path fill="#32D17A" d="M48 24 360 205 288 256Z"/><path fill="#F43249" d="M48 488 360 307 288 256Z"/><path fill="#FFC400" d="M360 205 452 240Q472 256 452 272L360 307 288 256Z"/></svg><span><small>متوفر على</small><b>Google Play</b></span></a><a class="pill ghost" href="app/">افتح التطبيق على الويب</a></div></div></div></section>
 
 <footer><div class="wrap"><span>لاقي · من <a href="https://info.mechascene.com" style="font-weight:700">MechaScene</a></span><nav><a href="privacy.html">الخصوصية</a><a href="terms.html">شروط الاستخدام</a><a href="community-guidelines.html">قواعد الاستخدام</a><a href="delete-account.html">حذف الحساب</a></nav></div></footer>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)},T='أموكلان ٦٢٥',typed=$('typed'),
+q=$('q'),r1=$('r1'),r2=$('r2'),dir=$('dir'),pin=$('pin'),qt=$('qt'),els=[q,r1,r2,dir,pin];
+function sleep(ms){return new Promise(function(r){setTimeout(r,ms)})}
+function reset(){els.forEach(function(e){e.classList.remove('on')});typed.textContent='اسأل عن دواء…';qt.textContent='بانتظار الرد';qt.className='tag'}
+function final(){typed.textContent=T;els.forEach(function(e){e.classList.add('on')});qt.textContent='تم الحل';qt.className='tag ok'}
+if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){final();return}
+(async function loop(){
+while(true){reset();await sleep(900);typed.textContent='';
+for(var i=0;i<T.length;i++){typed.textContent+=T[i];await sleep(130)}
+await sleep(500);q.classList.add('on');await sleep(1100);
+r1.classList.add('on');await sleep(900);r2.classList.add('on');
+await sleep(600);qt.textContent='تم الحل';qt.className='tag ok';
+await sleep(900);dir.classList.add('on');await sleep(700);pin.classList.add('on');
+await sleep(4200)}
+})();
+})();
+</script>
 </body></html>
