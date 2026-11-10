@@ -127531,7 +127531,7 @@ if(n==null){s=1
 break}o=p.c
 o.toString
 s=3
-return A.d(A.beP(o,"\u0647\u0644 \u064a\u062a\u0648\u0641\u0631 "+n.d+" \u0641\u064a "+n.r+"\u061f \u0627\u0633\u0623\u0644 \u0627\u0644\u0635\u064a\u0627\u062f\u0644\u0629 \u0645\u0628\u0627\u0634\u0631\u0629 \u0639\u0644\u0649 \u0644\u0627\u0642\u064a:","\u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0633\u0624\u0627\u0644","https://dawai.mechascene.com/app/#/q/"+n.b),$async$Ie)
+return A.d(A.beP(o,"\u0647\u0644 \u064a\u062a\u0648\u0641\u0631 "+n.d+" \u0641\u064a "+n.r+"\u061f \u0627\u0633\u0623\u0644 \u0627\u0644\u0635\u064a\u0627\u062f\u0644\u0629 \u0645\u0628\u0627\u0634\u0631\u0629 \u0639\u0644\u0649 \u0644\u0627\u0642\u064a:","\u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0633\u0624\u0627\u0644","https://lagi.mechascene.com/app/#/q/"+n.b),$async$Ie)
 case 3:case 1:return A.j(q,r)}})
 return A.k($async$Ie,r)},
 G7(a,b){return this.arF(a,b)},
@@ -128515,7 +128515,7 @@ A.b8B.prototype={
 $1(a){return B.xq},
 $S:282}
 A.b8S.prototype={
-$0(){return this.a.Ic("https://dawai.mechascene.com/privacy.html","\u062a\u0645 \u0646\u0633\u062e \u0627\u0644\u0631\u0627\u0628\u0637.")},
+$0(){return this.a.Ic("https://lagi.mechascene.com/privacy.html","\u062a\u0645 \u0646\u0633\u062e \u0627\u0644\u0631\u0627\u0628\u0637.")},
 $S:0}
 A.b8T.prototype={
 $0(){var s=A.bz(new A.b8A(),null,t.z)
