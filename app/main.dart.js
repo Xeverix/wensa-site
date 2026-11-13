@@ -35297,7 +35297,7 @@ return}if(J.c(p.h(0,q),"pharmacy")){o.bx(A.bz(new A.aDg(),r,t.z))
 return}if(J.c(p.h(0,q),"bug")){o.bx(A.bz(new A.aDh(),r,t.z))
 return}if(J.c(p.h(0,q),"invite")){n=o.c
 n.toString
-A.beP(n,"\u064a\u0627 \u0632\u0645\u064a\u0644\u064a \u0627\u0644\u0635\u064a\u062f\u0644\u064a\u060c \u062c\u0631\u0651\u0628 \xab\u0644\u0627\u0642\u064a\xbb: \u062a\u0637\u0628\u064a\u0642 \u064a\u0633\u0623\u0644 \u0641\u064a\u0647 \u0627\u0644\u0646\u0627\u0633 \u0639\u0646 \u062a\u0648\u0641\u0631 \u0627\u0644\u0623\u062f\u0648\u064a\u0629 \u0641\u064a \u0627\u0644\u0633\u0648\u062f\u0627\u0646 \u0648\u064a\u0631\u062f\u0651 \u0639\u0644\u064a\u0647\u0645 \u0627\u0644\u0635\u064a\u0627\u062f\u0644\u0629. \u0627\u0646\u0636\u0645 \u0648\u0633\u0627\u0647\u0645 \u0645\u0639\u0646\u0627 \u0641\u064a \u0627\u0644\u0648\u0635\u0648\u0644 \u0644\u0644\u062f\u0648\u0627\u0621.","\u0627\u062f\u0639\u064f \u0632\u0645\u0644\u0627\u0621\u0643 \u0627\u0644\u0635\u064a\u0627\u062f\u0644\u0629","https://t.me/lagi_app")
+A.beP(n,r,"\u064a\u0627 \u0632\u0645\u064a\u0644\u064a \u0627\u0644\u0635\u064a\u062f\u0644\u064a\u060c \u062c\u0631\u0651\u0628 \xab\u0644\u0627\u0642\u064a\xbb: \u062a\u0637\u0628\u064a\u0642 \u064a\u0633\u0623\u0644 \u0641\u064a\u0647 \u0627\u0644\u0646\u0627\u0633 \u0639\u0646 \u062a\u0648\u0641\u0631 \u0627\u0644\u0623\u062f\u0648\u064a\u0629 \u0641\u064a \u0627\u0644\u0633\u0648\u062f\u0627\u0646 \u0648\u064a\u0631\u062f\u0651 \u0639\u0644\u064a\u0647\u0645 \u0627\u0644\u0635\u064a\u0627\u062f\u0644\u0629. \u0627\u0646\u0636\u0645 \u0648\u0633\u0627\u0647\u0645 \u0645\u0639\u0646\u0627 \u0641\u064a \u0627\u0644\u0648\u0635\u0648\u0644 \u0644\u0644\u062f\u0648\u0627\u0621.","\u0627\u062f\u0639\u064f \u0632\u0645\u0644\u0627\u0621\u0643 \u0627\u0644\u0635\u064a\u0627\u062f\u0644\u0629","https://play.google.com/store/apps/details?id=com.mechascene.lagi&referrer=utm_source%3Dapp_invite_push")
 return}if(J.c(p.h(0,q),"friend")){o.bx(A.bz(new A.aDi(),r,t.z))
 return}s=p.h(0,"id")
 if(typeof s!="string"||s.length===0)return
@@ -35909,24 +35909,29 @@ _.a=e},
 aGn:function aGn(a,b){this.a=a
 this.b=b},
 aGo:function aGo(){},
-beP(a,b,c,d){return A.hV(a,new A.beV(c,a,new A.beX(),b+"\n"+d,new A.beW(a),d,b),!0,t.H)},
+beP(a,b,c,d,e){var s=c+"\n"+e
+s=b==null?s:s+"\n\n"+b
+return A.hV(a,new A.beV(d,a,new A.beX(),s,new A.beW(a),e,b,c),!0,t.H)},
 beW:function beW(a){this.a=a},
 beX:function beX(){},
-beV:function beV(a,b,c,d,e,f,g){var _=this
+beV:function beV(a,b,c,d,e,f,g,h){var _=this
 _.a=a
 _.b=b
 _.c=c
 _.d=d
 _.e=e
 _.f=f
-_.r=g},
+_.r=g
+_.w=h},
 beQ:function beQ(a,b){this.a=a
 this.b=b},
 beR:function beR(a,b){this.a=a
 this.b=b},
-beS:function beS(a,b,c){this.a=a
-this.b=b
-this.c=c},
+beS:function beS(a,b,c,d){var _=this
+_.a=a
+_.b=b
+_.c=c
+_.d=d},
 beT:function beT(a,b){this.a=a
 this.b=b},
 beU:function beU(a,b){this.a=a
@@ -119089,7 +119094,7 @@ A.aOC.prototype={
 $0(){return this.a.iV(B.u4)},
 $S:0}
 A.aOD.prototype={
-$0(){return A.beP(this.a,"\u0644\u0627\u0642\u064a: \u0627\u0633\u0623\u0644 \u0639\u0646 \u0623\u064a \u062f\u0648\u0627\u0621 \u0641\u064a \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u060c \u0648\u0627\u0644\u0635\u064a\u0627\u062f\u0644\u0629 \u064a\u0631\u062f\u0648\u0646 \u0639\u0644\u064a\u0643 \u0625\u0646 \u0643\u0627\u0646 \u0645\u062a\u0648\u0641\u0631\u0627\u064b \u0648\u064a\u0646.","\u0634\u0627\u0631\u0643 \u0644\u0627\u0642\u064a","https://t.me/lagi_app")},
+$0(){return A.beP(this.a,null,"\u0644\u0627\u0642\u064a: \u0627\u0633\u0623\u0644 \u0639\u0646 \u0623\u064a \u062f\u0648\u0627\u0621 \u0641\u064a \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u060c \u0648\u0627\u0644\u0635\u064a\u0627\u062f\u0644\u0629 \u064a\u0631\u062f\u0648\u0646 \u0639\u0644\u064a\u0643 \u0625\u0646 \u0643\u0627\u0646 \u0645\u062a\u0648\u0641\u0631\u0627\u064b \u0648\u064a\u0646.","\u0634\u0627\u0631\u0643 \u0644\u0627\u0642\u064a","https://play.google.com/store/apps/details?id=com.mechascene.lagi&referrer=utm_source%3Dapp_share")},
 $S:0}
 A.aOE.prototype={
 $0(){return A.ajD(this.a)},
@@ -122357,7 +122362,7 @@ case 1:return A.i(p.at(-1),r)}})
 return A.k($async$tl,r)},
 aAf(){var s=this.c
 s.toString
-return A.beP(s,u.h9,"\u0627\u062f\u0639\u064f \u0632\u0645\u064a\u0644\u0627\u064b \u0635\u064a\u062f\u0644\u064a\u0627\u064b","https://lagi.mechascene.com/app/")},
+return A.beP(s,null,u.h9,"\u0627\u062f\u0639\u064f \u0632\u0645\u064a\u0644\u0627\u064b \u0635\u064a\u062f\u0644\u064a\u0627\u064b","https://play.google.com/store/apps/details?id=com.mechascene.lagi&referrer=utm_source%3Dapp_invite_colleague")},
 Aa(a){return this.aBs(a)},
 aBs(a){var s=0,r=A.l(t.H),q,p=2,o=[],n=this,m,l,k,j,i
 var $async$Aa=A.h(function(b,c){if(b===1){o.push(c)
@@ -127531,7 +127536,7 @@ if(n==null){s=1
 break}o=p.c
 o.toString
 s=3
-return A.d(A.beP(o,"\u0647\u0644 \u064a\u062a\u0648\u0641\u0631 "+n.d+" \u0641\u064a "+n.r+"\u061f \u0627\u0633\u0623\u0644 \u0627\u0644\u0635\u064a\u0627\u062f\u0644\u0629 \u0645\u0628\u0627\u0634\u0631\u0629 \u0639\u0644\u0649 \u0644\u0627\u0642\u064a:","\u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0633\u0624\u0627\u0644","https://lagi.mechascene.com/app/#/q/"+n.b),$async$Ie)
+return A.d(A.beP(o,"\u062d\u0645\u0651\u0644 \u0644\u0627\u0642\u064a \u0645\u0646 Google Play:\nhttps://play.google.com/store/apps/details?id=com.mechascene.lagi&referrer=utm_source%3Dapp_share_question","\u0647\u0644 \u064a\u062a\u0648\u0641\u0631 "+n.d+" \u0641\u064a "+n.r+"\u061f \u0627\u0633\u0623\u0644 \u0627\u0644\u0635\u064a\u0627\u062f\u0644\u0629 \u0645\u0628\u0627\u0634\u0631\u0629 \u0639\u0644\u0649 \u0644\u0627\u0642\u064a:","\u0645\u0634\u0627\u0631\u0643\u0629 \u0627\u0644\u0633\u0624\u0627\u0644","https://lagi.mechascene.com/app/#/q/"+n.b),$async$Ie)
 case 3:case 1:return A.j(q,r)}})
 return A.k($async$Ie,r)},
 G7(a,b){return this.arF(a,b)},
@@ -130129,7 +130134,7 @@ return A.cn(!1,s,s,s,!0,s,s,s,!0,s,A.amo(c.P(0.15),A.bm(a,c,s,s,s,22),s),s,s,s,s
 $S:832}
 A.beV.prototype={
 $1(a){var s=this,r=null,q=s.b,p=s.c,o=s.d,n=s.e
-return A.cL(!0,A.ao(A.b([new A.Y(B.lq,A.F(s.a,r,r,r,r,A.C(q).ok.r,r,r),r),p.$4(B.qy,"\u0645\u0634\u0627\u0631\u0643\u0629 \u0639\u0628\u0631 \u062a\u0637\u0628\u064a\u0642 (\u0627\u062e\u062a\u0631 \u0648\u0627\u062a\u0633\u0627\u0628 \u0623\u0648 \u063a\u064a\u0631\u0647)",B.W,new A.beQ(q,o)),p.$4(B.a1h,"\u0648\u0627\u062a\u0633\u0627\u0628",B.vu,new A.beR(n,o)),p.$4(B.qC,"\u062a\u064a\u0644\u064a\u062c\u0631\u0627\u0645",B.vR,new A.beS(n,s.f,s.r)),p.$4(B.a1J,"\u0631\u0633\u0627\u0644\u0629 \u0646\u0635\u064a\u0629",B.bo,new A.beT(n,o)),p.$4(B.qv,"\u0646\u0633\u062e \u0627\u0644\u0631\u0633\u0627\u0644\u0629",B.W,new A.beU(q,o)),B.an],t.p),B.j,B.f,B.v),r,B.I,!0)},
+return A.cL(!0,A.ao(A.b([new A.Y(B.lq,A.F(s.a,r,r,r,r,A.C(q).ok.r,r,r),r),p.$4(B.qy,"\u0645\u0634\u0627\u0631\u0643\u0629 \u0639\u0628\u0631 \u062a\u0637\u0628\u064a\u0642 (\u0627\u062e\u062a\u0631 \u0648\u0627\u062a\u0633\u0627\u0628 \u0623\u0648 \u063a\u064a\u0631\u0647)",B.W,new A.beQ(q,o)),p.$4(B.a1h,"\u0648\u0627\u062a\u0633\u0627\u0628",B.vu,new A.beR(n,o)),p.$4(B.qC,"\u062a\u064a\u0644\u064a\u062c\u0631\u0627\u0645",B.vR,new A.beS(n,s.f,s.r,s.w)),p.$4(B.a1J,"\u0631\u0633\u0627\u0644\u0629 \u0646\u0635\u064a\u0629",B.bo,new A.beT(n,o)),p.$4(B.qv,"\u0646\u0633\u062e \u0627\u0644\u0631\u0633\u0627\u0644\u0629",B.W,new A.beU(q,o)),B.an],t.p),B.j,B.f,B.v),r,B.I,!0)},
 $S:35}
 A.beQ.prototype={
 $0(){var s=0,r=A.l(t.H),q=1,p=[],o=this,n,m
@@ -130157,7 +130162,8 @@ A.beR.prototype={
 $0(){return this.a.$1("https://wa.me/?text="+A.iY(2,this.b,B.a5,!1))},
 $S:0}
 A.beS.prototype={
-$0(){return this.a.$1("https://t.me/share/url?url="+A.iY(2,this.b,B.a5,!1)+"&text="+A.iY(2,this.c,B.a5,!1))},
+$0(){var s=this,r=A.iY(2,s.b,B.a5,!1),q=s.c,p=s.d
+return s.a.$1("https://t.me/share/url?url="+r+"&text="+A.iY(2,q==null?p:p+"\n\n"+q,B.a5,!1))},
 $S:0}
 A.beT.prototype={
 $0(){return this.a.$1("sms:?&body="+A.iY(2,this.b,B.a5,!1))},
